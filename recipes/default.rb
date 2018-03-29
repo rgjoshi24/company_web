@@ -11,7 +11,7 @@ when 'windows'
     cookbook 'company_web'
   end
 else
-  include_recipe 'apache::deafult'
+  include_recipe 'apache::default'
   edit_resource(:template, '/var/www/html/index.html') do
     source 'homepage.erb'
     cookbook 'company_web'
